@@ -4,9 +4,9 @@ import { SectionWrapper } from "../hoc";
 
 const Resume = () => {
   const viewLink =
-    "https://drive.google.com/file/d/1Gdg--LNqjQW8zB5_YjOVvYe7yZsyxteL/view?usp=drive_link";
-  const downloadLink =
-    "https://drive.google.com/uc?export=download&id=1Gdg--LNqjQW8zB5_YjOVvYe7yZsyxteL";
+  "https://drive.google.com/file/d/1dV5Bp70O2aCdv_kS9uxROZLS1sGjF3zK/view?usp=drive_link";
+const downloadLink =
+  "https://drive.google.com/uc?export=download&id=1dV5Bp70O2aCdv_kS9uxROZLS1sGjF3zK";
 
   return (
     <motion.div
