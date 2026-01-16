@@ -86,7 +86,7 @@ const Contact = () => {
             <span className="hidden md:inline">GitHub</span>
           </a>
           <a
-            href="https://linkedin.com/in/saman29"
+            href="https://www.linkedin.com/in/saman29/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gradient-to-r from-blue-500 to-cyan-400 py-3 px-6 rounded-xl text-white font-bold shadow-md shadow-primary flex items-center gap-2"

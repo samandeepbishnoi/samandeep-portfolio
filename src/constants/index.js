@@ -22,8 +22,9 @@ import {
   emotion,
   vidchat,
   truefeedback,
-  micro,
   jpmc,
+  solsphere,
+  vercel,
 } from "../assets";
 
 export const navLinks = [
@@ -35,7 +36,11 @@ export const navLinks = [
     id: "work",
     title: "Work",
   },
-   {
+  {
+    id: "experience",
+    title: "Experience",
+  },
+  {
     id: "resume",
     title: "Resume",
   },
@@ -81,6 +86,8 @@ const technologies = [
   // 🧠 Backend & APIs
   { name: "Node.js", icon: nodejs },
 
+  // (Text-only skill groupings are shown elsewhere; icons here are the ones we have)
+
   // 🛢️ Databases
   { name: "MongoDB", icon: mongodb },
 
@@ -97,6 +104,31 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Software Engineer Intern",
+    company_name: "Solsphere.AI (GRC Startup)",
+  icon: solsphere,
+    iconBg: "#0C1E3B",
+    date: "June 2025 – Aug 2025",
+    points: [
+      "Designed and implemented a risk assessment and management module, enabling automated compliance reports and real-time status tracking for internal stakeholders.",
+      "Developed backend validation logic for key GRC workflows (promotion, termination, and role-change events), preventing invalid access states and improving policy enforcement accuracy.",
+      "Debugged and tested production-grade backend services with extensive data validation, improving system stability and reducing runtime issues.",
+    ],
+    link: "",
+  },
+  {
+    title: "Open Source Contribution",
+    company_name: "Vercel/commerce",
+  icon: vercel,
+    iconBg: "#111827",
+    date: "June 2025",
+    points: [
+      "Identified and addressed an SSR crash in the Shopify provider by improving error handling in shopifyFetch() and getCart().",
+      "Collaborated with maintainers through code review and incorporated feedback on the proposed solution.",
+    ],
+    link: "https://github.com/vercel/commerce",
+  },
+  {
     title: "Software Engineering Job Simulation",
     company_name: "JPMorgan Chase & Co. (Forage)",
     icon: jpmc,
@@ -109,32 +141,6 @@ const experiences = [
       "Demonstrated proficiency in Java and SQL in a production-like simulation environment.",
     ],
     link:"https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Sj7temL583QAYpHXD/E6McHJDKsQYh79moz_Sj7temL583QAYpHXD_xpzjStwuCXMcsvr7T_1750928790419_completion_certificate.pdf",
-  },
-  {
-    title: "Career Essentials in Generative AI",
-    company_name: "Microsoft",
-    icon: micro,
-    iconBg: "#F3F6F9",
-    date: "July 2024",
-    points: [
-      "Gained a strong foundation in Generative AI, including ethical considerations and real-world applications.",
-      "Worked on case studies involving Large Language Models and image generation tools.",
-      "Skills acquired: Artificial Intelligence (AI), Generative AI, Computer Ethics.",
-    ],
-    link:"https://www.linkedin.com/learning/certificates/457faeef4fc48b17855b22afc704a28bb52fa7f0c3b391b6b53773cb5c032bb1",
-  },
-  {
-    title: "Career Essentials in Software Development",
-    company_name: "Microsoft",
-    icon: micro,
-    iconBg: "#F3F6F9",
-    date: "June 2024",
-    points: [
-      "Completed a comprehensive course on core software development principles and best practices.",
-      "Learned about programming paradigms, version control, testing, and debugging.",
-      "Skills acquired: Programming, Software Development.",
-    ],
-    link:"https://www.linkedin.com/learning/certificates/e666f9b161830c0f73765208a6716fcce8dc1625a79f2698646597050fa8a17f",
   },
 ];
 
@@ -152,35 +158,6 @@ const projects = [
     ],
     image: careercoach,
     source_code_link: "https://github.com/samandeepbishnoi/sensai",
-    deployment_link:"https://sensai-three-beige.vercel.app/",
-  },
-  {
-    name: "Cartly",
-    description:
-      "Modern Shopify product page app built with React and GraphQL. Supports real-time cart, variant selection, product filtering, and responsive UI with animations and dark mode.",
-    tags: [
-      { name: "react", color: "blue-text-gradient" },
-      { name: "shopify", color: "green-text-gradient" },
-      { name: "tailwind", color: "pink-text-gradient" },
-      { name: "graphql", color: "blue-text-gradient" },
-    ],
-    image: cartly,
-    source_code_link: "https://github.com/samandeepbishnoi/Cartly",
-    deployment_link:"https://cartly-omega.vercel.app/",
-  },
-  {
-    name: "Memories",
-    description:
-      "A MERN-based social media app where users can post, edit, like, and search memory posts. Features JWT authentication, image uploads, and tag-based filters.",
-    tags: [
-      { name: "react", color: "blue-text-gradient" },
-      { name: "mongodb", color: "green-text-gradient" },
-      { name: "nodejs", color: "pink-text-gradient" },
-      { name: "jwt", color: "blue-text-gradient" },
-    ],
-    image: memories,
-    source_code_link: "https://github.com/samandeepbishnoi/memories",
-    deployment_link:"https://memories-frontend-z09k.onrender.com/",
   },
   {
     name: "Emotion Detector",
@@ -194,7 +171,6 @@ const projects = [
     ],
     image: emotion,
     source_code_link: "https://github.com/samandeepbishnoi/emotion_detector",
-    deployment_link:"https://github.com/samandeepbishnoi/emotion_detector",
   },
   {
     name: "VidChat",
@@ -208,7 +184,32 @@ const projects = [
     ],
     image: vidchat,
     source_code_link: "https://github.com/samandeepbishnoi/VidChat",
-    deployment_link:"https://vidchat-0pxf.onrender.com/",
+  },
+  {
+    name: "Cartly",
+    description:
+      "Modern Shopify product page app built with React and GraphQL. Supports real-time cart, variant selection, product filtering, and responsive UI with animations and dark mode.",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: "shopify", color: "green-text-gradient" },
+      { name: "tailwind", color: "pink-text-gradient" },
+      { name: "graphql", color: "blue-text-gradient" },
+    ],
+    image: cartly,
+    source_code_link: "https://github.com/samandeepbishnoi/Cartly",
+  },
+  {
+    name: "Memories",
+    description:
+      "A MERN-based social media app where users can post, edit, like, and search memory posts. Features JWT authentication, image uploads, and tag-based filters.",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: "mongodb", color: "green-text-gradient" },
+      { name: "nodejs", color: "pink-text-gradient" },
+      { name: "jwt", color: "blue-text-gradient" },
+    ],
+    image: memories,
+    source_code_link: "https://github.com/samandeepbishnoi/memories",
   },
   {
     name: "True Feedback",
@@ -222,7 +223,6 @@ const projects = [
     ],
     image: truefeedback,
     source_code_link: "https://github.com/samandeepbishnoi/TrueFeedback",
-    deployment_link:"https://true-feedback-delta-sepia.vercel.app/sign-in",
   },
 ];
 

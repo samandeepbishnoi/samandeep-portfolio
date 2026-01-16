@@ -41,17 +41,20 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Who I Am.</h2>
       </motion.div>
 
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className="text-secondary text-[17px] leading-[30px] flex-1 min-w-[280px]"
-        >
-          I'm a full-stack developer who loves turning ideas into fast,
-          responsive, and cleanly designed web apps. From building e-commerce
-          experiences with Next.js and Tailwind to crafting AI-powered tools
-          with Python and Flask, I focus on performance, usability, and
-          scalability. I enjoy solving real-world problems, writing clean code,
-          and learning new tech fast. Let’s create something impactful together.
-        </motion.p>
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className="text-secondary text-[17px] leading-[30px] flex-1 min-w-[280px]"
+      >
+        I'm a Computer Engineering undergrad at NIT Kurukshetra (CGPA: 8.70)
+        who builds full-stack, product-focused web apps and AI-powered
+        features. I've shipped production-grade backend validation and
+        compliance workflows during my internship at a GRC startup
+        (Solsphere.AI), and I also contribute to open source (Vercel/commerce).
+        I enjoy combining strong CS fundamentals (DSA, OOP, OS, DBMS) with
+        modern stacks like Next.js/React, Node.js, Tailwind, and practical ML
+        tooling (TensorFlow, Keras, OpenCV) to deliver clean, reliable, and
+        scalable solutions.
+      </motion.p>
 
 
       <div className="mt-20 flex flex-wrap gap-10">

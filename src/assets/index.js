@@ -28,6 +28,9 @@ import opencv from "./tech/opencv.png";
 
 import micro from "./company/micro.png";
 import jpmc from "./company/jpmc.png";
+import solsphere from "./company/solsphere.jpeg";
+import vercel from "./company/vercel.png";
+import amazon from "./company/amazon.png";
 
 
 import careercoach from "./careercoach.png";
@@ -60,6 +63,9 @@ export {
   threejs,
   micro,
   jpmc,
+  amazon,
+  solsphere,
+  vercel,
   python,
   nextjs,
   vite,
